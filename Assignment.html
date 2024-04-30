@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module--5  ( jquery )</title>
+</head>
+<body>
+
+       <h2> <center><u>Module (jquery Basic, Effects & Advanced) - 5</u></center></h2>
+
+       <h3>Q-1 :-What is Jquery..? </h3>
+       <p><b>Ans:-</b> jQuery is a lightweight, "write less, do more", JavaScript library. The purpose of jQuery is to make it much easier to use JavaScript ...</p>
+
+       <h3>Q-2 :-  How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery , 
+        JQuery Animation? </h3>
+        <p><b>Ans:- 2</b>The addClass() and removeClass() methods are respectively used to add and remove the CSS classes when there is a need to add or remove them from the webpage on the occurrence of an event. $('selector'). removeClass(class_name); <br>
+            addClass(className, [duration], [easing], [callback]) <br>
+            .removeClass(className, [duration], [easing], [callback])
+        </p>
+
+        <h3> Q-3 :-How to create slider with animation?</h3>
+        <p><b>Ans:-- 3 </b>
+            
+            <html>
+            <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <style> 
+            #panel, #flip {
+                padding: 5px;
+                text-align: center;
+                background-color: #a7a8a5;
+                border: solid 1px #a2a0a0;
+            }
+            
+            #panel {
+                padding: 50px;
+                display: none;
+            }
+            </style>
+            </head>
+            <body>
+             
+                <div id="flip">Click to slide </div>
+                <div id="panel">Hello world</div>
+            
+            </body>
+            <script> 
+                $(document).ready(function(){
+                        $("#flip").click(function(){
+                    $("#panel").slideToggle("slow");
+                 });
+                });
+            </script>
+            </html>
+        </p>
+    
+</body>
+</html>
